@@ -1,7 +1,9 @@
 class Animal:
-    def __init__(self, n, s):
-        self.name = n
-        self.sound = s
+    name=""
+    sound=""
+    def __init__(self, name, sound):
+        self.name = name
+        self.sound = sound
 
     def speak(self):
         print(self.name, "says", self.sound)
@@ -9,6 +11,5 @@ class Animal:
 
 dog = Animal("Dog", "Woof")
 cat = Animal("Cat", "Meow")
-
 dog.speak()
 cat.speak()
